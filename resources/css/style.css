@@ -1,3 +1,7 @@
+/*
+orange color: #e67e22
+*/
+
 /* ------------------------------------------ */
 /* BASIC SETUP */
 /* ------------------------------------------ */
@@ -49,20 +53,20 @@ h1 {
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
-  color: #fff;
   border-radius: 200px;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-full:link,
-.btn:visited {
+.btn-full:visited {
   background-color: #e67e22;
   border: 1px solid #e67e22;
+  color: #fff;
   margin-right: 15px;
 }
 
 .btn-ghost:link,
-.btn:visited {
+.btn-ghost:visited {
   border: 1px solid #e67e22;
   color: #e67e22;
 }
@@ -72,13 +76,13 @@ h1 {
 }
 
 .btn-full:hover,
-.btn:active {
+.btn-full:active {
   background-color: #cf6d17;
   border: 1px solid #cf6d17;
 }
 
 .btn-ghost:hover,
-.btn:active {
+.btn-ghost:active {
   border: 1px solid #cf6d17;
   color: #fff;
 }
@@ -100,4 +104,38 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+  padding: 8px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
 }
