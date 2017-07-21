@@ -18,7 +18,7 @@ html {
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 /* ------------------------------------------ */
 
@@ -218,6 +218,17 @@ header {
   margin-top: 20px;
 }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+
+/* ------------------------------------------ */
+/* MAIN NAVIGATION */
+/* ------------------------------------------ */
 .main-nav {
   float: right;
   list-style: none;
@@ -244,6 +255,41 @@ header {
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
+
+/* ------------------------------------------ */
+/* STICKY NAVIGATION */
+/* ------------------------------------------ */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
+}
+.sticky .main-nav {
+  margin-top: 22px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color: #555;
+  padding: 16px 0;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: block;
+}
+
 /* ------------------------------------------ */
 /* FEATURES */
 /* ------------------------------------------ */
